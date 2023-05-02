@@ -40,6 +40,7 @@ public class MoveLutemonsActivity extends AppCompatActivity {
         rgLutemons.clearCheck();
     }
 
+    //Moves selected Lutemon to selected location
     public void moveLutemon(View view) {
         RadioGroup rgLutemons = findViewById(R.id.rgLutemons);
         RadioGroup rgLocations = findViewById(R.id.rgLocations);

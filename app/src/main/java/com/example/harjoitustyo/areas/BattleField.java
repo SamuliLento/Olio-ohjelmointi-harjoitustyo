@@ -16,6 +16,7 @@ public class BattleField extends Storage {
         return battleField;
     }
 
+    //Two Lutemons fight, winner gains experience and returns home, loser goes to graveyard
     public String fight(Lutemon lutemon1, Lutemon lutemon2) {
 
         String battleLog = "";
@@ -49,7 +50,7 @@ public class BattleField extends Storage {
         }
         battleLog = battleLog + "The battle is over.";
         winner.heal();
-        winner.setExperience(winner.getExperience() + 1);
+        winner.setExperience(1);
         Home.getInstance().addLutemon(winner);
         Graveyard.getInstance().addLutemon(loser);
         BattleField.getInstance().removeLutemon(winner.getId());

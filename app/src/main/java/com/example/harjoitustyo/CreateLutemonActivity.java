@@ -23,6 +23,7 @@ public class CreateLutemonActivity extends AppCompatActivity {
         setContentView(R.layout.activity_create_lutemon);
     }
 
+    //Creates new Lutemon based on given name and chosen color and sends it home
     public void createLutemon(View view) {
 
         EditText name = findViewById(R.id.editName);

@@ -118,6 +118,7 @@ public class FragmentBattleField extends Fragment {
         }
     }
 
+    //Starts a battle between the selected Lutemons
     public void battle() {
         RadioGroup rgBattle1 = getView().findViewById(R.id.rgBattle1);
         RadioGroup rgBattle2 = getView().findViewById(R.id.rgBattle2);

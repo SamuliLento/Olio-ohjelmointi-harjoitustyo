@@ -109,6 +109,7 @@ public class FragmentTrainingArea extends Fragment {
         rgTrain.clearCheck();
     }
 
+    //Trains selected Lutemon
     public void trainLutemon() {
         RadioGroup rgTrain = getView().findViewById(R.id.rgTrain);
 

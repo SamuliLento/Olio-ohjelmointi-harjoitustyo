@@ -16,8 +16,9 @@ public class TrainingArea extends Storage {
         return trainingArea;
     }
 
+    //Lutemon gains experience and returns home
     public void train(Lutemon lutemon) {
-        lutemon.setExperience(lutemon.getExperience() + 1);
+        lutemon.setExperience(1);
         Home.getInstance().addLutemon(lutemon);
         TrainingArea.getInstance().removeLutemon(lutemon.getId());
     }
